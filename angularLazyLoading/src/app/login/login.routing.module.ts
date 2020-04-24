@@ -5,6 +5,10 @@ import { SuccessComponent } from '../success/success.component';
 
 const routes: Routes = [
   {
+    path: ':id',
+    component: LoginComponent,
+  },
+  {
     path: '',
     component: LoginComponent,
     children: [

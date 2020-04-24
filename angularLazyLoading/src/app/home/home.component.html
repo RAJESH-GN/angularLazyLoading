@@ -1,1 +1,14 @@
-<p>home works!</p>
+<table *ngIf="observable | async as Users">
+  <tr>
+    <th>Id</th>
+    <th>name</th>
+    <th>company</th>
+    <th>place</th>
+  </tr>
+  <tr *ngFor="let user of Users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.company }}</td>
+    <td>{{ user.place }}</td>
+  </tr>
+</table>
